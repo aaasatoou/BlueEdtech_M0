@@ -3,7 +3,7 @@
 ano = int(input("Qual seu ano de nascimento?\n"))
 if 2022 - ano < 16:
   print("Voto negado!")
-elif 2022 - ano < 18 or 2022-ano >= 70:
+elif 2022 - ano < 18 or 2022 - ano >= 70:
   print("Voto opcional!")
 else:
   print ("Voto obrigatório")
