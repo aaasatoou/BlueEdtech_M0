@@ -10,7 +10,7 @@ while True:
     break
 
   elif n.isnumeric():
-    n = float(n)
+    n = int(n)
 
     if numeros.count(n)>0:
       continue
