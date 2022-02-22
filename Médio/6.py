@@ -19,7 +19,6 @@ while True:
 
   else:
     print("Entrada inválida!!!!")
-  print(numeros)
 
 numeros.sort()
 print(f"Os numeros digitados foram: {numeros}")
