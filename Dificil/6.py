@@ -25,12 +25,12 @@ for i in range (0,rodadas):
   for n in range (0,numJ):
     dic[f"Rodada {i+1}"].append(random.randint(1,6))
 
-  print(dic[f"Rodada {i+1}"])
+  print(f"\n{dic[f'Rodada {i+1}']}")
   
   if dic[f"Rodada {i+1}"].count(max(dic[f"Rodada {i+1}"])) > 1:
     print(f"Rodada {i+1} desconsiderada devido ao empate!")
   else:
-    print(f"Rodada {i+1} é válida!")
+    print(f"Rodada {i+1} é valida!")
     dic["Placar"][dic[f"Rodada {i+1}"].index(max(dic[f"Rodada {i+1}"]))] += 1
 
 
@@ -48,4 +48,4 @@ if dic["Placar"].count(max(dic["Placar"])) > 1:
       print(f"Parabéns {dic['Jogadores'][x]}")
 
 else:
-  print(f"Parabéns {dic['Jogadores'][dic['Placar'].index(max(dic['Placar']))]}, você venceu")
+  print(f"Parabéns {dic['Jogadores'][dic['Placar'].index(max(dic['Placar']))]}, você venceu!")
