@@ -30,7 +30,7 @@ for i in range (0,rodadas):
   if dic[f"Rodada {i+1}"].count(max(dic[f"Rodada {i+1}"])) > 1:
     print(f"Rodada {i+1} desconsiderada devido ao empate!")
   else:
-    print(f"Rodada {i+1} é valida!")
+    print(f"Rodada {i+1} é válida!")
     dic["Placar"][dic[f"Rodada {i+1}"].index(max(dic[f"Rodada {i+1}"]))] += 1
 
 
